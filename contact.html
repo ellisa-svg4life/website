@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #1abc9c;
+        }
+
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 20px;
+            flex-wrap: wrap; /* Ensures responsiveness */
+        }
+
+        .contact-section {
+            flex: 1;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #1abc9c;
+        }
+
+        .contact-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .contact-section a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            background: #1abc9c;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+        .contact-section a:hover {
+            background: #16a085;
+            transform: scale(1.1);
+        }
+
+        .icon-container {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+
+        .contact-section .icon-container i.fa-whatsapp {
+            color: #25D366;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="contact-container">
+        <div class="contact-section">
+            <h1>Contact Me</h1>
+            <div class="icon-container">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p>Feel free to connect with me on Instagram!</p>
+            <a href="https://www.instagram.com/bbxc_g/profilecard/?igsh=MWVnOTJjeHVvdDBrcw==" target="_blank">
+                Visit My Instagram
+            </a>
+        </div>
+        <div class="contact-section">
+            <h1>Contact Me</h1>
+            <div class="icon-container">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <p>Feel free to connect with me on WhatsApp!</p>
+            <a href="https://wa.me/qr/JKQTRXGCBJHVB1" target="_blank">
+                Message Me on WhatsApp
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

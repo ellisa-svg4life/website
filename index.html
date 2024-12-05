@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Personal Website</title>
+    <style>
+        body {
+            background-image: url('background3.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #fff;
+            line-height: 1.6;
+            overflow: hidden; 
+        }
+        body, h1, h2, p, ul, li, a {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        header {
+            background: url('https://source.unsplash.com/1600x900/?business') center/cover no-repeat,
+                        linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1));
+            height: 100vh;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: relative;
+        }
+        header h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.5rem;
+            font-style: italic;
+            text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+        }
+        header img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 4px 8px white;
+            margin-top: 20px;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            display: block;
+            padding: 10px 15px;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: background-color 0.3s ease;
+        }
+        nav ul li a:hover {
+            background-color: #1abc9c;
+        }
+        .bubble {
+            position: absolute;
+            bottom: -50px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.8);
+            animation: float 6s ease-in-out infinite;
+        }
+        .bubble:nth-child(odd) {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1000px);
+                opacity: 0;
+            }
+        }
+        .bubble:nth-child(1) {
+            left: 10%;
+            animation-duration: 8s;
+        }
+        .bubble:nth-child(2) {
+            left: 30%;
+            animation-duration: 6s;
+        }
+        .bubble:nth-child(3) {
+            left: 50%;
+            animation-duration: 10s;
+        }
+        .bubble:nth-child(4) {
+            left: 70%;
+            animation-duration: 7s;
+        }
+        .bubble:nth-child(5) {
+            left: 90%;
+            animation-duration: 5s;
+        }
+
+        footer {
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="biodata.html">Biodata</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <header id="home">
+        <h1>Welcome to My Personal Website</h1>
+        <p>
+            “"Don't aim for success if you want it; just do what you love and believe in, and it will come naturally." – David Frost
+        </p>
+        <img src="fernanda.jpg" alt="Your Picture">
+    </header>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <footer>
+        <p>&copy; 2024 Elliesa</p>
+    </footer>
+</body>
+</html>
